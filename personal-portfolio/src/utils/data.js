@@ -86,8 +86,8 @@ export const PROJECTS = [
 
   {
     title: "Personal Portfolio Using React Js",
-    github: "https://github.com/your-github-repo-url",
-    view: "https://your-portfolio-url.netlify.app/",
+    github: "https://github.com/Amit-loveCoding/personal-portfolio/tree/main",
+    view: "https://personal-portfolio-amit.netlify.app/",
     description: [
       "Developed a responsive single-page portfolio with React.js.",
       "Implemented smooth navigation using React Router.",
