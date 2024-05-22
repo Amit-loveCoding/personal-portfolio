@@ -1,0 +1,95 @@
+.mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5); 
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999 !important;
+  opacity: 0;
+  box-shadow: 0px 29px 88px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  transform: translateX(-100vw);
+}
+
+.mobile-menu-container {
+  width: 80vw; 
+  max-width: 400px;
+  height: 100vh;
+  background-color: #342864;
+  padding: 2rem;
+  position: relative; 
+}
+
+.mobile-menu.active {
+  display: block; 
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e); 
+  box-shadow: 0 4px 8px rgba(231, 221, 221, 0.9);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  height: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.logo span {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #080808;
+  margin-top: -0.2rem;
+}
+
+.mobile-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.contact-btn {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  padding: 0.6rem 2rem;
+  border: none;
+  outline: 1.5px solid transparent;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  color: #a993fe;
+  background: #000;
+  outline: 1.5px solid #a993fe;
+}
+
+@media (max-width: 769px) {
+  .mobile-menu {
+    display: block;
+  }
+}
